@@ -8,9 +8,9 @@ type Post = {
   content: string;
 };
 
-interface Params {
+type PageProps = {
   params: { slug: string[] };
-}
+};
 
 export default async function PostPage({ params }: Params) {
   // URL のパス要素を組み立て → "/YYYY/MM/DD/slug/"
