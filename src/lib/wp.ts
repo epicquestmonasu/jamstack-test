@@ -1,6 +1,6 @@
 // src/lib/wp.ts
-export async function wpFetch<T>(query: string, variables: Record<string, any> = {}): Promise<T> {
-  const res = await fetch(`${process.env.WP_URL}/graphql`, {
+export async function wpFetch<T>(query: string, variables: Record<string, unknown> = {}): Promise<T> {
+    const res = await fetch(`${process.env.WP_URL}/graphql`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ query, variables }),
