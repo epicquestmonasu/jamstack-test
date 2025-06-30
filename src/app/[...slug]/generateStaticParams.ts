@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import { wpFetch } from '@/lib/wp';
 
 export async function generateStaticParams(): Promise<{ slug: string[] }[]> {

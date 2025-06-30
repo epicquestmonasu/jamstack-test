@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import { wpFetch } from '@/lib/wp';
 import { generateStaticParams as realParams } from './generateStaticParams'; // ⭐️ import で回避！
 

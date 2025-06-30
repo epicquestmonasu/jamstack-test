@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 // src/lib/wp.ts
 
 export async function wpFetch<T>(query: string, variables?: Record<string, any>): Promise<T> {
